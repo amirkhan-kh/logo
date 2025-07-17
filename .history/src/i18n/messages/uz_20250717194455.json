@@ -1,0 +1,14 @@
+{
+  "NavLink": {
+    "navLink1": "Bosh sahifa",
+    "navLink2": "Yangiliklar",
+    "navLink3": "Arxiv",
+    "navLink4": "Samarqand",
+    "navLink5": "Yarmarka",
+    "navLink6": "Forum"
+  },
+   "SelectSwitcher": {
+    "label": "Tilni o'zgartirish",
+    "locale": "{locale, select, en {English} uz {uz} ru {Русский} other {Unknown}}"
+  }
+}

@@ -1,0 +1,16 @@
+import React from "react";
+
+type TopButtonProps = {
+  className?: string; // className ni optional qilib belgilash
+  children?: React.ReactNode; // children ni ham optional qilib belgilash
+};
+
+const TopButton: React.FC<TopButtonProps> = ({ className = '', children = "Click Me" }) => {
+  return (
+    <button className={`border-[#919099] border rounded-[8px] ${className}`}>
+      {children} {/* Dynamic text yoki element */}
+    </button>
+  );
+};
+
+export default TopButton;

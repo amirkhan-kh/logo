@@ -1,0 +1,27 @@
+import { card } from '@/db/card'
+import { useTranslations } from 'next-intl';
+import Image from 'next/image'
+import React from 'react'
+
+const CardProduct:React.FC = () => {
+  const t = useTranslations("Tab");
+  return (
+    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-7 gap-y-5'>
+      {
+        card.map((item) => (
+          <div key={item.id} className='w-full'>
+            <div className="relative w-full">
+            <Image  src={item.img} alt={item.author}/>
+            </div>
+            <div className='p-[12px]'>
+              <p className='text-[#FF9A50] xt-[12px] leading-[150%] font-medium tracking-[0%] mb'>{item.title}</p>
+              <p>{t(item.description)}</p>
+              <p>{item.author}</p>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  )
+}
+export default CardProduct

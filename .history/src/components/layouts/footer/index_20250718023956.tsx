@@ -1,0 +1,25 @@
+import TopButton from '@/ui/button'
+import React from 'react'
+
+export const Footer = () => {
+  const t = usetransla
+  return (
+    <footer className='bg-[#120E0F] w-full'>
+      <div className="container mx-auto">
+        <div className="flex ">
+          <div></div>
+          <ul></ul>
+          <ul></ul>
+          <TopButton>
+
+          </TopButton>
+        </div>
+
+
+        <div className='border-[#F3742D] border-t'>
+        <p>© 2025 — Copyright</p>
+        </div>
+      </div>
+    </footer>
+  )
+}

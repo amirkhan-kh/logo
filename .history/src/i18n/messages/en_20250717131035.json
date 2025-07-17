@@ -1,0 +1,12 @@
+{
+  "NavLink": {
+    "navLink1":"Home",
+    "navLink2":"News",
+    "navLink3":"Archive",
+    "navLink4":"Samarkand",
+    "navLink5":"Fair",
+    "navLink6":"Forum",
+    "locale": "De" 
+  }
+ 
+}

@@ -1,0 +1,30 @@
+{
+  "NavLink": {
+    "navLink1": "Home",
+    "navLink2": "News",
+    "navLink3": "Archive",
+    "navLink4": "Samarkand",
+    "navLink5": "Fair",
+    "navLink6": "Forum",
+    "navLink7": "Thu-25 April, 2025",
+    "navLink8": "In Samarkand",
+    "navLink9": "Search",
+    "btn": "Login"
+  },
+  "SelectSwitcher": {
+    "label": "Change Language",
+    "locale": "{locale, select, en {Eng} uz {Uzb} ru {Rus} other {Unknown}}"
+  },
+  "Intro": {
+    "title": "Journey into the past with Logo",
+    "description": "Dive into the history of the city and channel, with a convenient sorting by years and topics.",
+    "placeholder": "Search in Samarkand archive"
+  },
+  "Tab": {
+    "title": "Photos",
+    "cardDescription": "Athletes were ceremoniously welcomed in Samarkand"
+  },
+  "Footer": {
+    "footerBtn": "Contact Us"
+  }
+}

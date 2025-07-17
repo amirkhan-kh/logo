@@ -1,0 +1,18 @@
+import card1 from '../../'
+export const card = [
+    {title: "Savannah Nguyen", description: "cardDescription", author: "Андрей Кравчук", img: },
+    {title: "Eleanor Pena", description: "cardDescription", author: "Андрей Кравчук", img: },
+    {title: "Leslie Alexander", description: "cardDescription", author: "Андрей Кравчук", img: },
+    {title: "Savannah Nguyen", description: "cardDescription", author: "Андрей Кравчук", img: },
+    {title: "Marvin McKinney", description: "cardDescription", author: "Андрей Кравчук", img: },
+    {title: "Savannah Nguyen", description: "cardDescription", author: "Андрей Кравчук", img: },
+    {title: "Savannah Nguyen", description: "cardDescription", author: "Андрей Кравчук", img: },
+    {title: "Kristin Watson", description: "cardDescription", author: "Андрей Кравчук", img: },
+    {title: "Savannah Nguyen", description: "cardDescription", author: "Андрей Кравчук", img: },
+    {title: "Ralph Edwards", description: "cardDescription", author: "Андрей Кравчук", img: },
+    {title: "Savannah Nguyen", description: "cardDescription", author: "Андрей Кравчук", img: },
+    {title: "Savannah Nguyen", description: "cardDescription", author: "Андрей Кравчук", img: },
+    {title: "Floyd Miles", description: "cardDescription", author: "Андрей Кравчук", img: },
+    {title: "Eleanor Pena", description: "cardDescription", author: "Андрей Кравчук", img: },
+    {title: "Savannah Nguyen", description: "cardDescription", author: "Андрей Кравчук", img: },
+]

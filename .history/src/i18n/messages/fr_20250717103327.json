@@ -1,0 +1,37 @@
+{
+  "HomePage": {
+    "title": "Willkommen bei Next.js mit Internationalisierung",
+    "welcome": "Willkommen in unserer mehrsprachigen Anwendung!",
+    "description": "Dies ist eine Demonstration der Next.js-Internationalisierung mit next-intl. Sie können zwischen verschiedenen Sprachen wechseln, indem Sie den Sprachselektor in der oberen rechten Ecke verwenden.",
+    "aboutButton": "Mehr Über Uns Erfahren",
+    "contactButton": "Kontakt Aufnehmen",
+    "features": {
+      "title": "Hauptfunktionen",
+      "item1": "Mehrsprachige Unterstützung mit einfachem Wechsel",
+      "item2": "Serverseitiges Rendering mit Übersetzungen",
+      "item3": "Typsichere Übersetzungsschlüssel"
+    }
+  },
+  "AboutPage": {
+    "title": "Über Uns",
+    "backToHome": "Zurück zur Startseite",
+    "content": "Wir sind ein Team, das sich der Erstellung erstaunlicher mehrsprachiger Web-Erfahrungen widmet. Unsere Anwendung zeigt, wie man Internationalisierung in Next.js-Anwendungen mit der next-intl-Bibliothek implementiert.",
+    "team": {
+      "title": "Unser Team",
+      "description": "Unser vielfältiges Team spricht mehrere Sprachen und versteht die Wichtigkeit, inklusive Web-Erfahrungen für Benutzer auf der ganzen Welt zu schaffen."
+    }
+  },
+  "ContactPage": {
+    "title": "Kontaktieren Sie Uns",
+    "backToHome": "Zurück zur Startseite",
+    "form": {
+      "name": "Vollständiger Name",
+      "namePlaceholder": "Geben Sie Ihren vollständigen Namen ein",
+      "email": "E-Mail-Adresse",
+      "emailPlaceholder": "Geben Sie Ihre E-Mail-Adresse ein",
+      "message": "Nachricht",
+      "messagePlaceholder": "Geben Sie hier Ihre Nachricht ein...",
+      "submit": "Nachricht Senden"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "NavLink": {
+    "navLink1": "Главная",
+    "navLink2": "Новости",
+    "navLink3": "Архив",
+    "navLink4": "Самарканд",
+    "navLink5": "Ярмарка",
+    "navLink6": "Форум",
+    "navLink7": "Пн-25 Апреля, 2025 г.",
+    "navLink8": "в Самаркенде",
+    "navLink9": "Поиск",
+    "btn": "Войти"
+    
+  },
+  "SelectSwitcher": {
+    "label": "Изменить язык",
+    "locale": "{locale, select, en {Eng} uz {O‘zb} ru {Рус} other {Unknown}}"
+  },
+  "Intro": {
+    "title" ""
+  }
+}

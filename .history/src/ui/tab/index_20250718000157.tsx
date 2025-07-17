@@ -1,0 +1,46 @@
+"use client"
+import { ArchiveCard } from "@/components/sections/archive-sections";
+import { FairCard } from "@/components/sections/fair-sections";
+import React, { useState } from "react";
+
+export const Tab = () => {
+  const [activeTab, setActiveTab] = useState("plans");
+
+  const renderContent = () => {
+    if (activeTab === "plans") {
+      return <ArchiveCard />;
+    } else if (activeTab === "history") {
+      return <FairCard />;
+    } 
+    return null;
+  };
+
+  return (
+    <div className="mb-10">
+      <div className="flex gap-4 border-b border-gray-200  ">
+        <button
+          onClick={() => setActiveTab("plans")}
+          className={`py-2 px-4 text-sm font-medium ${
+            activeTab === "plans"
+              ? "border-b-2 border-blue-600 text-blue-600"
+              : "text-gray-600 hover:text-blue-500"
+          }`}
+        >
+          Top-Up Credits
+        </button>
+        <button
+          onClick={() => setActiveTab("history")}
+          className={`py-2 px-4 text-sm font-medium ${
+            activeTab === "history"
+              ? "border-b-2 border-blue-600 text-blue-600"
+              : "text-gray-600 hover:text-blue-500"
+          }`}
+        >
+          History
+        </button>
+      </div>
+
+      <div>{renderContent()}</div>
+    </div>
+  );
+};

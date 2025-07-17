@@ -1,0 +1,20 @@
+{
+  "NavLink": {
+    "navLink1": "Главная",
+    "navLink2": "Новости",
+    "navLink3": "Архив",
+    "navLink4": "Самарканд",
+    "navLink5": "Ярмарка",
+    "navLink6": "Форум",
+    "navLink7": "Форум",
+    "navLink6": "Форум",
+    "navLink6": "Форум",
+    "navLink6": "Форум",
+
+    
+  },
+  "SelectSwitcher": {
+    "label": "Изменить язык",
+    "locale": "{locale, select, en {Eng} uz {O‘zb} ru {Рус} other {Unknown}}"
+  }
+}
