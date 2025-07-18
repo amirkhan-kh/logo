@@ -6,6 +6,7 @@
 
 body {
   font-family: var(--font-urbanist), sans-serif;
+  overflow-x: hidden;
 }
 .container {
   width: 1440px;
@@ -93,6 +94,7 @@ body {
   }
   
 }
+
 
 .responsive-img {
   width: 100%;

@@ -4,18 +4,22 @@ import Link from "next/link";
 import React from "react";
 
 export const Footer = () => {
-  const f = useTranslations("Footer");  
+  const f = useTranslations("Footer");
   const t = useTranslations("NavLink");
-  
+
   return (
     <footer className="bg-[#120E0F] w-full py-6">
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 my-7 text-center sm:text-left w-full">
-          <div className="">
+        <div className="flex justify-between py-5 renderContent">
+          <div >
             <h2 className="text-[#FF9A50] text-[44px] font-bold mb-11">Logo</h2>
-            <div>
-              <p className="text-[#DCC7BC] font-medium text-[14px] mb-3">hello@logoipsum.com</p>
-              <p className="text-[#DCC7BC] font-medium text-[14px]">+1 891 989-11-91</p>
+            <div className="hidden sm:block">
+              <p className="text-[#DCC7BC] font-medium text-[14px] mb-3">
+                hello@logoipsum.com
+              </p>
+              <p className="text-[#DCC7BC] font-medium text-[14px]">
+                +1 891 989-11-91
+              </p>
             </div>
           </div>
           <ul className="text-[#DCC7BC] font-medium text-[16px] leading-[170%]">
@@ -38,17 +42,22 @@ export const Footer = () => {
               <Link href="/forum">{t("navLink6")}</Link>
             </li>
           </ul>
-          <ul className="text-[#dcc7bcce] font-medium text-[16px] leading-[140%] hidden sm:block">
-            <li>FAQ</li>
-            <li>Delivery</li>
-          </ul>
-          <TopButton className=" hidden sm:block text-[#FF9A50] border-[#FF9A50] border py-2.5 px-6 text-[14px] font-medium hover:bg-black  h-[50px]">
-            {f("footerBtn")}
-          </TopButton>
+
+          <div className="hidden sm:flex justify-between gap-4">
+            <ul className="text-[#dcc7bcce] font-medium text-[16px] leading-[140%] hidden sm:block">
+              <li>FAQ</li>
+              <li>Delivery</li>
+            </ul>
+            <TopButton className=" hidden sm:block text-[#FF9A50] border-[#FF9A50] border py-2.5 px-6 text-[14px] font-medium hover:bg-black  h-[50px]">
+              {f("footerBtn")}
+            </TopButton>
+          </div>
         </div>
 
         <div className="border-[#F3742D] border-t flex items-end justify-between pt-6">
-          <p className="text-[#E7C4B1] text-[12px] font-normal">© 2025 — Copyright</p>
+          <p className="text-[#E7C4B1] text-[12px] font-normal">
+            © 2025 — Copyright
+          </p>
           <p className="text-[#E7C4B1] text-[12px] font-normal">Privacy</p>
         </div>
       </div>
