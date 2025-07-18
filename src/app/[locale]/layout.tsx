@@ -16,9 +16,7 @@ const urbanist = Urbanist({
 export const metadata: Metadata = {
   title: "Logo",
   description: "Путешествие в прошлое с Logo ",
-  icons: {
-    icon: "/lo.jpg",
-  },
+  
 };
 
 export function generateStaticParams() {
