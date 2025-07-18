@@ -35,7 +35,7 @@ export const TabSections: React.FC = () => {
           <div className="flex items-center justify-between px-1.5 sm:px-20">
             <button
               onClick={() => setActiveTab("archive")}
-              className={`py-2 px-2  -translate-y-0.5 w-[140px] flex items-center justify-between   ${
+              className={`py-2 px-2  -translate-y-0.5 w-[140px] hidden sm:flex items-center justify-between   ${
                 activeTab === "archive"
                   ? "border-t-2 border-[#FF9A50] text-[#FF9A50] text-[28px] font-semibold  w-[220px]"
                   : "text-[#3d3a39] text-[18px] font-normal"
@@ -94,7 +94,7 @@ export const TabSections: React.FC = () => {
           <h3 className="text-[#211F2E] font-normal text-3xl mb-8">
             {t("title")}
           </h3>
-          <div className="mb-6 px-2.5 sm:px-0 w-[360px] sm:w-full grid place-content-center">
+          <div className="renderContent mb-6 px-2.5 sm:px-0 w-[550px] sm:w-full flex flex-col">
             <div>{renderContent()}</div>
           </div>
         </div>

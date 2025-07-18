@@ -14,7 +14,7 @@ export const InputElement: React.FC<TInputProps> = ({className, placeholder, typ
         type={type}
         placeholder={placeholder}
       />
-      <IoSearch size={20} className="absolute right-2 text-[#211F2E]" />
+      <IoSearch size={20} className="absolute right-2 text-[#211F2E] hidden sm:block" />
     </div>
   );
 };

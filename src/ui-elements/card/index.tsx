@@ -61,7 +61,7 @@ const CardProduct: React.FC<CardProductProps> = ({ activeTab }) => {
                 src={item.img}
                 alt={item.author}
                 fill
-                className="object-cover h-full"
+                className="object-cover h-full responsive-img"
                 />
             </div>
             <div className="p-[12px]">
@@ -144,7 +144,7 @@ const CardProduct: React.FC<CardProductProps> = ({ activeTab }) => {
                   className="rounded-full"
                 />
 
-                <h2 className="text-black text-lg font-semibold">{selectedCard.author}</h2>
+                <h2 className="text-black text-[14px] sm:text-lg font-semibold">{selectedCard.author}</h2>
               </div>
               <div className="flex gap-2.5">
                 <TopButton
@@ -157,7 +157,7 @@ const CardProduct: React.FC<CardProductProps> = ({ activeTab }) => {
                 </TopButton>
               </div>
             </div>
-            <p className="font-medium text-[16px] leading-[140%] mb-2 w-[70%]">{t("modalDescription")}</p>
+            <p className="font-medium text-[16px] leading-[140%] mb-4 w-full sm:w-[70%]">{t("modalDescription")}</p>
             <div className="flex items-center gap-1.5">
               <TopButton className="p-2 rounded-[30px] font-medium text-sm">mood</TopButton>
               <TopButton className="p-2 rounded-[30px] font-medium text-sm">Emotion</TopButton>

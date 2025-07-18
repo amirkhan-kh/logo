@@ -43,8 +43,62 @@ body {
   }
   
 }
+@media only screen and (max-width: 530px){
+  .renderContent {
+    padding: 0px 10px;
+    width: 470px;
+  }
+  
+}
+@media only screen and (max-width: 484px){
+  .renderContent {
+    padding: 0px 10px;
+    width: 430px;
+  }
+  
+}
+@media only screen and (max-width: 434px){
+  .renderContent {
+    padding: 0px 10px;
+    width: 400px;
+  }
+  
+}
 
+@media only screen and (max-width: 400px){
+  .renderContent {
+    padding: 0px 10px;
+    width: 350px;
+  }
+  
+}
+@media only screen and (max-width: 340px){
+  .renderContent {
+    padding: 0px 5px;
+    width: 300px;
+  }
+  
+}
+@media only screen and (max-width: 300px){
+  .renderContent {
+    padding: 0px 3px;
+    width: 270px;
+  }
+  
+}
+@media only screen and (max-width: 270px){
+  .renderContent {
+    padding: 0px 3px;
+    width: 230px;
+  }
+  
+}
 
-
+.responsive-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 16 / 9;
+}
 
 
