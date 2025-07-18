@@ -48,20 +48,21 @@ const CardProduct: React.FC<CardProductProps> = ({ activeTab }) => {
 
   return (
     <>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-5 gap-y-3">
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-2 sm:gap-x-5 gap-y-3 mx-auto">
         {slicedCards.map((item) => (
           <div
-            key={item.id}
-            className="w-full cursor-pointer"
-            onClick={() => setSelectedCard(item)}
+          key={item.id}
+          className="cursor-pointer  "
+          onClick={() => setSelectedCard(item)}
           >
-            <div className="w-full h-[202px] relative">
+            <div className="h-[202px] relative">
               <Image
                 src={item.img}
                 alt={item.author}
                 fill
-                className="object-cover w-full h-full"
-              />
+                className="object-cover h-full"
+                />
             </div>
             <div className="p-[12px]">
               <p className="text-[#FF9A50] text-[12px] mb-1.5">{item.title}</p>
@@ -77,13 +78,13 @@ const CardProduct: React.FC<CardProductProps> = ({ activeTab }) => {
       {/* Modal */}
       {selectedCard && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-[#0000009b] backdrop-blur-[2px]"
-          onClick={() => setSelectedCard(null)}
+        className="fixed inset-0 z-50 flex items-center justify-center bg-[#0000009b] backdrop-blur-[2px]"
+        onClick={() => setSelectedCard(null)}
         >
           <div
-            className="relative z-10 bg-white w-[78vw] max-w-5xl max-h-[90vh] h-auto rounded-xl overflow-auto p-5"
+            className="relative z-10 bg-white w-[94%] sm:w-[78vw] max-w-5xl max-h-[98vh] sm:max-h-[90vh] h-auto rounded-xl overflow-auto p-2 sm:p-5"
             onClick={(e) => e.stopPropagation()}
-          >
+            >
             <div className="flex items-center justify-between mb-2">
               <h3 className="text-[#211F2E] font-semibold text-2xl">
                 {t("title")}
@@ -91,7 +92,7 @@ const CardProduct: React.FC<CardProductProps> = ({ activeTab }) => {
               <button
                 className="text-xl font-bold"
                 onClick={() => setSelectedCard(null)}
-              >
+                >
                 <IoCloseSharp size={24} />
               </button>
             </div>
@@ -116,12 +117,12 @@ const CardProduct: React.FC<CardProductProps> = ({ activeTab }) => {
                     src={selectedCard.img}
                     alt={selectedCard.author}
                     fill
-                    className="object-cover rounded-lg"
+                    className="object-cover rounded-lg "
                   />
                 </div>
               </div>
             </div>
-            <div className="flex items-center gap-4 mb-3">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-3 w-[40%]">
               {slicedCards.slice(0, 3).map((item) => (
                 <Image
                   key={item.id}

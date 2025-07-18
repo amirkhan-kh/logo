@@ -10,7 +10,7 @@ export const Footer = () => {
   return (
     <footer className="bg-[#120E0F] w-full py-6">
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 my-7">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 my-7 text-center sm:text-left w-full">
           <div className="">
             <h2 className="text-[#FF9A50] text-[44px] font-bold mb-11">Logo</h2>
             <div>
@@ -38,11 +38,11 @@ export const Footer = () => {
               <Link href="/forum">{t("navLink6")}</Link>
             </li>
           </ul>
-          <ul className="text-[#dcc7bcce] font-medium text-[16px] leading-[140%]">
+          <ul className="text-[#dcc7bcce] font-medium text-[16px] leading-[140%] hidden sm:block">
             <li>FAQ</li>
             <li>Delivery</li>
           </ul>
-          <TopButton className="text-[#FF9A50] border-[#FF9A50] border py-2.5 px-6 text-[14px] font-medium hover:bg-black  h-[50px]">
+          <TopButton className=" hidden sm:block text-[#FF9A50] border-[#FF9A50] border py-2.5 px-6 text-[14px] font-medium hover:bg-black  h-[50px]">
             {f("footerBtn")}
           </TopButton>
         </div>

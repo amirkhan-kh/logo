@@ -12,89 +12,91 @@ export const TabSections: React.FC = () => {
   const t = useTranslations("Tab");
   const [activeTab, setActiveTab] = useState("archive");
   const renderContent = () => {
-  if (activeTab === "archive") {
-    return <ArchiveCard activeTab={activeTab} />;
-  } else if (activeTab === "fair") {
-    return <FairCard activeTab={activeTab} />;
-  } else if (activeTab === "forum") {
-    return <ForumCard activeTab={activeTab} />;
-  } else if (activeTab === "news") {
-    return <NewsCard activeTab={activeTab} />;
-  } else if (activeTab === "samrkand") {
-    return <SamarkandCard activeTab={activeTab} />;
-  } else if (activeTab === '/'){
-    <HomeCard activeTab={activeTab}/>
-  }
-  return null;
-};
-
+    if (activeTab === "archive") {
+      return <ArchiveCard activeTab={activeTab} />;
+    } else if (activeTab === "fair") {
+      return <FairCard activeTab={activeTab} />;
+    } else if (activeTab === "forum") {
+      return <ForumCard activeTab={activeTab} />;
+    } else if (activeTab === "news") {
+      return <NewsCard activeTab={activeTab} />;
+    } else if (activeTab === "samrkand") {
+      return <SamarkandCard activeTab={activeTab} />;
+    } else if (activeTab === "/") {
+      <HomeCard activeTab={activeTab} />;
+    }
+    return null;
+  };
 
   return (
     <div className="mb-10">
       <div className="flex flex-col gap-4 border-t border-gray-300">
-        <div className="container mx-auto flex items-center justify-between px-20">
-          <button
-            onClick={() => setActiveTab("archive")}
-            className={`py-2 px-2  -translate-y-0.5 w-[140px] flex items-center justify-between ${
-              activeTab === "archive"
-                ? "border-t-2 border-[#FF9A50] text-[#FF9A50] text-[28px] font-semibold  w-[220px]"
-                : "text-[#3d3a39] text-[18px] font-normal"
-            }`}
-          >
-            <span>1991</span>
-            <span>1992</span>
-          </button>
-          <button
-            onClick={() => setActiveTab("fair")}
-            className={`py-2 px-2  -translate-y-0.5 w-[140px] flex items-center justify-between ${
-              activeTab === "fair"
-                ? "border-t-2 border-[#FF9A50] text-[#FF9A50] text-[28px] font-semibold  w-[220px]"
-                : "text-[#3d3a39] text-[18px] font-normal"
-            }`}
-          >
-            <span>2004</span>
-            <span>2006</span>
-          </button>
-          <button
-            onClick={() => setActiveTab("forum")}
-            className={`py-2 px-2  -translate-y-0.5 flex w-[140px] items-center justify-between ${
-              activeTab === "forum"
-                ? "border-t-2 border-[#FF9A50] text-[#FF9A50] text-[28px] font-semibold  w-[220px]"
-                : "text-[#3d3a39] text-[18px] font-normal"
-            }`}
-          >
-            <span>2008</span>
-            <span>2010</span>
-          </button>
+        <div className="container mx-auto">
+          <div className="flex items-center justify-between px-1.5 sm:px-20">
+            <button
+              onClick={() => setActiveTab("archive")}
+              className={`py-2 px-2  -translate-y-0.5 w-[140px] flex items-center justify-between   ${
+                activeTab === "archive"
+                  ? "border-t-2 border-[#FF9A50] text-[#FF9A50] text-[28px] font-semibold  w-[220px]"
+                  : "text-[#3d3a39] text-[18px] font-normal"
+              }`}
+            >
+              <span>1991</span>
+              <span>1992</span>
+            </button>
+            <button
+              onClick={() => setActiveTab("fair")}
+              className={`py-2 px-2  -translate-y-0.5 w-[140px] flex items-center justify-between  ${
+                activeTab === "fair"
+                  ? "border-t-2 border-[#FF9A50] text-[#FF9A50] text-[28px] font-semibold  w-[220px]"
+                  : "text-[#3d3a39] text-[18px] font-normal"
+              }`}
+            >
+              <span>2004</span>
+              <span>2006</span>
+            </button>
+            <button
+              onClick={() => setActiveTab("forum")}
+              className={`py-2 px-2  -translate-y-0.5 hidden sm:flex w-[140px] items-center justify-between  ${
+                activeTab === "forum"
+                  ? "border-t-2 border-[#FF9A50] text-[#FF9A50] text-[28px] font-semibold  w-[220px]"
+                  : "text-[#3d3a39] text-[18px] font-normal"
+              }`}
+            >
+              <span>2008</span>
+              <span>2010</span>
+            </button>
 
-          <button
-            onClick={() => setActiveTab("news")}
-            className={`py-2 px-2  -translate-y-0.5 flex w-[140px] items-center justify-between ${
-              activeTab === "news"
-                ? "border-t-2 border-[#FF9A50] text-[#FF9A50] text-[28px] font-semibold  w-[220px]"
-                : "text-[#3d3a39] text-[18px] font-normal"
-            }`}
-          >
-            <span>2012</span>
-            <span>2014</span>
-          </button>
-          <button
-            onClick={() => setActiveTab("samrkand")}
-            className={`py-2 px-2  -translate-y-0.5 flex w-[140px] items-center justify-between ${
-              activeTab === "samrkand"
-                ? "border-t-2 border-[#FF9A50] text-[#FF9A50] text-[28px] font-semibold  w-[220px]"
-                : "text-[#3d3a39] text-[18px] font-normal"
-            }`}
-          >
-            <span>2016</span>
-            <span>2018</span>
-          </button>
-          
-        </div>
+            <button
+              onClick={() => setActiveTab("news")}
+              className={`py-2 px-2  -translate-y-0.5 hidden sm:flex w-[140px] items-center justify-between  ${
+                activeTab === "news"
+                  ? "border-t-2 border-[#FF9A50] text-[#FF9A50] text-[28px] font-semibold  w-[220px]"
+                  : "text-[#3d3a39] text-[18px] font-normal"
+              }`}
+            >
+              <span>2012</span>
+              <span>2014</span>
+            </button>
+            <button
+              onClick={() => setActiveTab("samrkand")}
+              className={`py-2 px-2  -translate-y-0.5 hidden sm:flex w-[140px] items-center justify-between ${
+                activeTab === "samrkand"
+                  ? "border-t-2 border-[#FF9A50] text-[#FF9A50] text-[28px] font-semibold  w-[220px]"
+                  : "text-[#3d3a39] text-[18px] font-normal"
+              }`}
+            >
+              <span>2016</span>
+              <span>2018</span>
+            </button>
+          </div>
 
-        <div className="container mx-auto mb-6">
-          <h3 className="text-[#211F2E] font-normal text-3xl mb-8">{t("title")}</h3>
-          <div>{renderContent()}</div>
+          <h3 className="text-[#211F2E] font-normal text-3xl mb-8">
+            {t("title")}
+          </h3>
+          <div className="mb-6 px-2.5 sm:px-0 w-[360px] sm:w-full grid place-content-center">
+            <div>{renderContent()}</div>
+          </div>
         </div>
       </div>
     </div>

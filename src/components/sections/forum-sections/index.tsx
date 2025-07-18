@@ -3,7 +3,7 @@ import React from 'react'
 
 export const ForumCard = ({ activeTab }: { activeTab: string }) => {
   return (
-    <div>
+    <div className=''>
       <CardProduct activeTab={activeTab}/>
     </div>
   )

@@ -3,7 +3,7 @@ import NavigationLink from "../navigation-link";
 import { useTranslations } from "next-intl";
 import TopButton from "../button";
 import LocalSwitcherComponent from "../select-component";
-import { SheetDemo } from "../sheet-navbar";
+import { SheetDemo } from "../sheet-navigation";
 
 export const Navbar = () => {
   const t = useTranslations("NavLink");
@@ -14,8 +14,10 @@ export const Navbar = () => {
           <h1 className="font-bold text-[32px]">
             <strong>Logo</strong>
           </h1>
+          <div className="block md:hidden">
+            <SheetDemo />
+          </div>
 
-          
           <nav className="hidden md:block">
             <ul className="hidden md:flex items-center   md:gap-5 lg:gap-8 ">
               <li>
@@ -39,22 +41,15 @@ export const Navbar = () => {
                 <NavigationLink href="/forum">{t("navLink6")}</NavigationLink>
               </li>
             </ul>
-
-            
           </nav>
         </div>
-        <TopButton className="hidden sm:block py-2 px-6 tex-[12px] font-medium text-[#919099]">
+        <TopButton className="hidden md:block py-2 px-6 tex-[12px] font-medium text-[#919099]">
           {t("btn")}
         </TopButton>
 
-        <div className="block md:hidden">
-          <SheetDemo/>
-        </div>
-
-
         <div className="flex items-center gap-8 sm:hidden">
-              <LocalSwitcherComponent />
-            </div>
+          <LocalSwitcherComponent />
+        </div>
       </div>
     </div>
   );
