@@ -17,7 +17,7 @@ export const CurrentTime = () => {
 
   return (
     <>
-      <p className="w-[50px]">{time}</p>
+      <p className="hidden md:block w-full lg:w-[50px] text-left">{time}</p>
     </>
   );
 };

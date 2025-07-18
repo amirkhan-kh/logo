@@ -8,24 +8,26 @@ import { SamarkandCard } from "@/components/sections/samarkand-sections";
 import { useTranslations } from "next-intl";
 import React, { useState } from "react";
 
-export const Tab: React.FC = () => {
+export const TabSections: React.FC = () => {
   const t = useTranslations("Tab");
-
   const [activeTab, setActiveTab] = useState("archive");
   const renderContent = () => {
-    if (activeTab === "archive") {
-      return <ArchiveCard />;
-    } else if (activeTab === "fair") {
-      return <FairCard />;
-    } else if (activeTab === "forum") {
-      return <ForumCard />;
-    } else if (activeTab === "news") {
-        return <NewsCard/>;
-    } else if (activeTab === "samrkand"){
-        return <SamarkandCard/>;
-    }
-    return null;
-  };
+  if (activeTab === "archive") {
+    return <ArchiveCard activeTab={activeTab} />;
+  } else if (activeTab === "fair") {
+    return <FairCard activeTab={activeTab} />;
+  } else if (activeTab === "forum") {
+    return <ForumCard activeTab={activeTab} />;
+  } else if (activeTab === "news") {
+    return <NewsCard activeTab={activeTab} />;
+  } else if (activeTab === "samrkand") {
+    return <SamarkandCard activeTab={activeTab} />;
+  } else if (activeTab === '/'){
+    <HomeCard activeTab={activeTab}/>
+  }
+  return null;
+};
+
 
   return (
     <div className="mb-10">

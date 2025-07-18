@@ -1,6 +1,6 @@
 import { locales } from "@/config";
-import LocalSwitcher from "@/ui/select-switcher";
 import { useLocale, useTranslations } from "next-intl";
+import LocalSwitcher from "../select-switcher";
 
 export default function LocalSwitcherComponent(){
     const t = useTranslations("SelectSwitcher");

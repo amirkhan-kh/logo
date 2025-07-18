@@ -1,4 +1,4 @@
-import { Input } from "@/ui/input";
+import { InputElement } from "@/ui-elements/input";
 import { useTranslations } from "next-intl";
 import React from "react";
 
@@ -13,7 +13,7 @@ export const Intro = () => {
           {t("description")}
         </p>
         <div className="px-14">
-          <Input
+          <InputElement
             className="w-full bg-white py-2.5 px-3.5 hover:border-[#9190992d] border-[#9190991d] border-[1px] rounded-md"
             placeholder={t("placeholder")}
           />

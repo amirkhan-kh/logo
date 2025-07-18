@@ -22,7 +22,8 @@
   },
   "Tab": {
     "title": "Photos",
-    "cardDescription": "Athletes were ceremoniously welcomed in Samarkand"
+    "cardDescription": "Athletes were ceremoniously welcomed in Samarkand",
+    "modalDescription":"Open the world of news with us: deep analytics and exclusive reports. Fresh news in real-time: first information about key events."
   },
   "Footer": {
     "footerBtn": "Contact Us"

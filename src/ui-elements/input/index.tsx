@@ -6,7 +6,7 @@ type TInputProps = {
     placeholder? :  string; 
     type?: string
 }
-export const Input: React.FC<TInputProps> = ({className, placeholder, type}) => {
+export const InputElement: React.FC<TInputProps> = ({className, placeholder, type}) => {
   return (
     <div className="flex items-center relative">
       <input

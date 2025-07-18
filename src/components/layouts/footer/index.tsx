@@ -1,4 +1,4 @@
-import TopButton from "@/ui/button";
+import TopButton from "@/ui-elements/button";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import React from "react";

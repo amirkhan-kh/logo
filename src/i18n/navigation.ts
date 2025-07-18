@@ -1,5 +1,3 @@
-
-
 import { createNavigation } from "next-intl/navigation";
 import { localePrefix, locales, pathnames } from "@/config";
 

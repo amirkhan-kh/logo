@@ -1,10 +1,10 @@
-import CardProduct from '@/ui/card'
+import CardProduct from '@/ui-elements/card'
 import React from 'react'
 
-export const ForumCard = () => {
+export const ForumCard = ({ activeTab }: { activeTab: string }) => {
   return (
     <div>
-      <CardProduct />
+      <CardProduct activeTab={activeTab}/>
     </div>
   )
 }
