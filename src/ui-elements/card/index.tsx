@@ -82,7 +82,7 @@ const CardProduct: React.FC<CardProductProps> = ({ activeTab }) => {
         onClick={() => setSelectedCard(null)}
         >
           <div
-            className="relative z-10 bg-white w-[94%] sm:w-[78vw] max-w-5xl max-h-[98vh] sm:max-h-[90vh] h-auto rounded-xl overflow-auto p-2 sm:p-5"
+            className="relative  overflow-x-hidden z-10 bg-white w-[94%] sm:w-[78vw] max-w-5xl max-h-[98vh] sm:max-h-[90vh] h-auto rounded-xl overflow-auto p-2 sm:p-5"
             onClick={(e) => e.stopPropagation()}
             >
             <div className="flex items-center justify-between mb-2">

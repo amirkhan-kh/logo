@@ -49,6 +49,10 @@ body {
     padding: 0px 10px;
     width: 470px;
   }
+  .container {
+    padding: 0px 5dvb;
+    width: 530px;
+  }
   
 }
 @media only screen and (max-width: 484px){
@@ -56,12 +60,20 @@ body {
     padding: 0px 10px;
     width: 430px;
   }
+  .container {
+    padding: 0px 5px;
+    width: 484px;
+  }
   
 }
 @media only screen and (max-width: 434px){
   .renderContent {
     padding: 0px 10px;
     width: 400px;
+  }
+  .container {
+    padding: 0px 5px;
+    width: 434px;
   }
   
 }
@@ -71,12 +83,20 @@ body {
     padding: 0px 10px;
     width: 350px;
   }
+  .container {
+    padding: 0px 5px;
+    width: 400px;
+  }
   
 }
 @media only screen and (max-width: 340px){
   .renderContent {
     padding: 0px 5px;
     width: 300px;
+  }
+  .container {
+    padding: 0px 5px;
+    width: 340px;
   }
   
 }
@@ -85,12 +105,20 @@ body {
     padding: 0px 3px;
     width: 270px;
   }
+  .container {
+    padding: 0px 5px;
+    width: 300px;
+  }
   
 }
 @media only screen and (max-width: 270px){
   .renderContent {
     padding: 0px 3px;
     width: 230px;
+  }
+  .container {
+    padding: 0px 5px;
+    width: 270px;
   }
   
 }
