@@ -29,16 +29,16 @@ export const TabSections: React.FC = () => {
   };
 
   return (
-    <div className="mb-10">
+    <div className=" mb-10">
       <div className="flex flex-col gap-4 border-t border-gray-300">
         <div className="container mx-auto">
-          <div className="flex items-center justify-between px-1.5 sm:px-20">
+          <div className="renderContent flex items-center justify-between px-1.5 sm:px-20">
             <button
               onClick={() => setActiveTab("archive")}
-              className={`py-2 px-2  -translate-y-0.5 w-[140px] hidden sm:flex items-center justify-between   ${
+              className={`py-2 px-2  -translate-y-0.5 w-[140px] flex items-center justify-between   ${
                 activeTab === "archive"
-                  ? "border-t-2 border-[#FF9A50] text-[#FF9A50] text-[28px] font-semibold  w-[220px]"
-                  : "text-[#3d3a39] text-[18px] font-normal"
+                  ? "border-t-2 border-[#FF9A50] text-[#FF9A50] text-[15px] sm:text-[28px] font-semibold  w-[220px]"
+                  : "text-[#3d3a39] text-[12px] sm:text-[18px] font-normal"
               }`}
             >
               <span>1991</span>
@@ -48,8 +48,8 @@ export const TabSections: React.FC = () => {
               onClick={() => setActiveTab("fair")}
               className={`py-2 px-2  -translate-y-0.5 w-[140px] flex items-center justify-between  ${
                 activeTab === "fair"
-                  ? "border-t-2 border-[#FF9A50] text-[#FF9A50] text-[28px] font-semibold  w-[220px]"
-                  : "text-[#3d3a39] text-[18px] font-normal"
+                  ? "border-t-2 border-[#FF9A50] text-[#FF9A50] text-[15px] sm:text-[28px] font-semibold  w-[220px]"
+                  : "text-[#3d3a39] text-[12px] sm:text-[18px] font-normal"
               }`}
             >
               <span>2004</span>
@@ -57,10 +57,10 @@ export const TabSections: React.FC = () => {
             </button>
             <button
               onClick={() => setActiveTab("forum")}
-              className={`py-2 px-2  -translate-y-0.5 hidden sm:flex w-[140px] items-center justify-between  ${
+              className={`py-2 px-2  -translate-y-0.5 flex w-[140px] items-center justify-between  ${
                 activeTab === "forum"
-                  ? "border-t-2 border-[#FF9A50] text-[#FF9A50] text-[28px] font-semibold  w-[220px]"
-                  : "text-[#3d3a39] text-[18px] font-normal"
+                  ? "border-t-2 border-[#FF9A50] text-[#FF9A50] text-[15px] sm:text-[28px] font-semibold  w-[220px]"
+                  : "text-[#3d3a39] text-[12px] sm:text-[18px] font-normal"
               }`}
             >
               <span>2008</span>
@@ -71,8 +71,8 @@ export const TabSections: React.FC = () => {
               onClick={() => setActiveTab("news")}
               className={`py-2 px-2  -translate-y-0.5 hidden sm:flex w-[140px] items-center justify-between  ${
                 activeTab === "news"
-                  ? "border-t-2 border-[#FF9A50] text-[#FF9A50] text-[28px] font-semibold  w-[220px]"
-                  : "text-[#3d3a39] text-[18px] font-normal"
+                  ? "border-t-2 border-[#FF9A50] text-[#FF9A50] text-[15px] sm:text-[28px] font-semibold  w-[220px]"
+                  : "text-[#3d3a39] text-[12px] sm:text-[18px] font-normal"
               }`}
             >
               <span>2012</span>
@@ -82,8 +82,8 @@ export const TabSections: React.FC = () => {
               onClick={() => setActiveTab("samrkand")}
               className={`py-2 px-2  -translate-y-0.5 hidden sm:flex w-[140px] items-center justify-between ${
                 activeTab === "samrkand"
-                  ? "border-t-2 border-[#FF9A50] text-[#FF9A50] text-[28px] font-semibold  w-[220px]"
-                  : "text-[#3d3a39] text-[18px] font-normal"
+                  ? "border-t-2 border-[#FF9A50] text-[#FF9A50] text-[15px] sm:text-[28px] font-semibold  w-[220px]"
+                  : "text-[#3d3a39] text-[12px] sm:text-[18px] font-normal"
               }`}
             >
               <span>2016</span>

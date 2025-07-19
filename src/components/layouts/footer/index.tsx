@@ -54,7 +54,7 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="border-[#F3742D] border-t flex items-end justify-between pt-6">
+        <div className="renderContent border-[#F3742D] border-t flex items-end justify-between pt-6">
           <p className="text-[#E7C4B1] text-[12px] font-normal">
             © 2025 — Copyright
           </p>

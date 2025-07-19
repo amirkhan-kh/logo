@@ -78,7 +78,7 @@ const CardProduct: React.FC<CardProductProps> = ({ activeTab }) => {
       {/* Modal */}
       {selectedCard && (
         <div
-        className="fixed inset-0 z-50 flex items-center justify-center bg-[#0000009b] backdrop-blur-[2px]"
+        className="renderContent fixed inset-0 z-50 flex items-center justify-center bg-[#0000009b] backdrop-blur-[2px]"
         onClick={() => setSelectedCard(null)}
         >
           <div
